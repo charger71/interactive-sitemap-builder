@@ -65,8 +65,8 @@ jQuery(function($){
 		$('.hash').val(location.href);
 		
 		//shorturl
-		var long_url = 'http://brandfeverinc.github.io/interactive-sitemap-builder/#'+location_hash;
-		var bitly_api_url = 'https://api-ssl.bitly.com/v3/shorten?access_token=967ae71a7a87bcf4588673f2feadbd8a5525449b&longUrl='+escape(long_url);
+		var long_url = 'http://circlecube.github.io/interactive-sitemap-builder/#'+location_hash;
+		var bitly_api_url = 'https://api-ssl.bitly.com/v3/shorten?access_token=3c210e855272fb6f54cb2f77fa6452ff662e76d7&longUrl='+escape(long_url);
 		$.getJSON(bitly_api_url, function(json){
 			console.log(json.data.url);
 			$('.hash_href').attr('href', json.data.url);
